@@ -22,6 +22,9 @@ TARGET_NO_KERNEL_OVERRIDE := true
 # Enable mainline checking
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
 
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/permissions/android.software.credentials.xml
+
 # Overrides
 PRODUCT_NAME := lineage_sdk_tv_x86
 PRODUCT_MODEL := LineageOS Android TV SDK built for x86
